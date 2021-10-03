@@ -1,0 +1,16 @@
+class Solution {
+    boolean ans = true;
+    public boolean isBalanced(TreeNode root) {
+        util(root);
+        return ans;
+    }
+  
+  public int util(TreeNode root)
+    {
+        if(root == null)return 0;
+         int left = util(root.left);
+        int right = util(root.right);
+        ans &= (Math.abs(left - right) <= 1) ? true : false;
+        return Math.max(left,right) + 1;
+    }
+}
