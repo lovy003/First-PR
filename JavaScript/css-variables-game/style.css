@@ -1,0 +1,26 @@
+:root{
+    --padding: 10px;
+    --blur: 1px;
+    --invert: 0;
+    --color: yellow;
+}
+
+body{
+    margin: 0;
+}
+.container{
+ height: 100%;
+ width: 100%;
+ text-align: center;
+ background-color: blanchedalmond;
+}
+h1{
+    margin-top: 0;
+    background-color: burlywood;
+}
+img{
+  padding: var(--padding);
+  filter: blur(var(--blur)) invert(var(--invert));
+  background: var(--color);
+  
+}
