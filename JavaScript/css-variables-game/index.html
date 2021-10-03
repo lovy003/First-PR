@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Variable play</title>
+</head>
+<body>
+    <div class="container">
+      <h1>Move the bars to see the <mark>changes</mark>.</h1>
+      <h4><span>Padding : </span><span><input type="range" name="padding" max="150" min="20" data-sizing="px" class="content-input"></span></h4>
+      <h4><span>Blur : </span><span><input type="range" name="blur" max="10" min="0" data-sizing="px" class="content-input"></span></h4>
+      <h4><span>Invert : </span><span><input type="range" name="invert" max="1" min="0" class="content-input"></span></h4>
+      <h4><span>Background-Color : </span><span><input type="color" name="color" class="content-input"></span></h4>
+      <img src="subject.jpg" height="300px" width="200px">
+    </div>
+  
+    <script>
+      const inp = document.querySelectorAll('.content-input');
+      
+      function update(){
+       const suffix = this.dataset.sizing || '';
+       document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+      }
+      inp.forEach(item => {
+          item.addEventListener('change',update);
+      });
+      inp.forEach(item => {
+          item.addEventListener('mousemove',update);
+      });
+
+    </script>
+
+
+</body>
+</html>
