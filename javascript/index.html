@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
+
+/*common styles*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Nunito',sans-serif;
+    font-weight: 400;
+}
+html{
+    font-size: 62.5%;
+}
+
+.section-heading{
+    font-size: 12rem;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    text-transform: capitalise;
+    letter-spacing: 0.5rem;
+    text-shadow: 0.3rem 0.3rem 0.3rem #000;
+   position: relative;
+    top: 0;
+}
+
+/*end of common styles*/
+
+/*navbar styles*/
+.navbar{
+    width: 100%;
+    height: 14rem;
+    background-color: #000;
+    position: fixed;
+    top: -14rem;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:.2rem .2rem .2rem #000 ;
+    transition: top 0.4s;
+}
+ .navbar.change{
+    top: 0;
+    transition:top 0.4s 0.2s;
+   
+} 
+.navbar-link {
+    color: #aaa;
+    margin :0 4rem;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ transition: color .3s;
+ opacity: 0;
+}
+.change .navbar-link{
+    opacity: 1;
+}
+.change .navbar-link:nth-child(1){
+    transition: opacity .4s .5s;
+}
+.change .navbar-link:nth-child(2){
+    transition: opacity .4s .6s;
+}
+.change .navbar-link:nth-child(3){
+    transition: opacity .4s .7s;
+}
+.change .navbar-link:nth-child(4){
+    transition: opacity .4s .8s;
+}
+.change .navbar-link:nth-child(5){
+    transition: opacity .4s .9s;
+}
+.navbar-link:hover{
+    color: #fff;
+  
+}
+.navbar-link i{
+   
+    font-size: 7rem;
+}
+.navbar-link i:hover{
+    font-size: 10rem;
+}
+.navbar-link span{
+   
+    font-size: 2.5rem;
+    font-weight: 90%;justify-content: space-evenly;
+    letter-spacing: .5rem;
+    margin-top: .5rem;
+}
+.menu{
+    height:6rem ;
+    width: 4rem;
+    background-color: #000;
+    position: fixed;
+    top: 1rem;
+    left: 5rem;
+    border-radius: 30rem 30rem 15rem 15rem;
+    box-shadow: .1rem .1rem .1rem #000,-.1rem -.1rem .1rem #000;
+    cursor: pointer;
+    transition: top .4s .2s;
+}
+ .menu.change{
+ top:15rem;
+ transition:top 0.4s
+
+} 
+.menu::before{
+    content: "";
+    width: .3rem;
+    height: 15rem;
+    background-color: #000;
+    position: absolute;
+    top: -15rem;
+    left :1.8rem;
+    box-shadow: .1rem .1rem #000;
+}
+/*end of navbar styles*/
+
+/*section-1*/
+.section-1{
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.section-1-icons i{
+    font-size: 30rem;
+    color: #a79a2d;
+    position: absolute;
+   transform: translate(-50%,-50%)scale(0);
+   text-shadow: .2rem .2rem .2rem #000;
+  transition: transform 0.3s 0.3s;
+}
+.section-1-icons i.change{
+    transform: translate(-50%,-50%)scale(1);
+}
+
+/*end of section-1*/
+
+/*section-2*/
+.section-2{
+    background-color: #222;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10rem 0;
+}
+
+.card-container{
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  margin-top: 4rem;
+
+    
+}
+.card{
+   width: 30rem;
+   background-color: #a79a2d;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 1rem 1rem 1rem #000;
+  position: relative;
+  transform: rotateY(20deg)skewX(-2deg);
+  transition: transform 0.3s, box-shadow 0.5s;
+}
+.card:hover{
+    transform: rotateY(20deg)skewX(-2deg)translateY(-3rem);
+    box-shadow: 2rem 2rem 2rem #000;
+}
+.card::before{
+    content: "";
+    height: 100%;
+    width: 1rem;
+    background-color: #817824;
+    position: absolute;
+    top: 0;
+    left: -1rem;
+    transform: skewY(45deg);
+    transform-origin: right;
+    box-shadow: -.1rem -.1rem .1rem #000;
+}
+.card::after{
+    content: "";
+    height: 1rem;
+    width: 100%;
+    background-color: #8f8317;
+    position: absolute;
+    top: -1rem;
+    left: 0;
+    transform: skewX(45deg);
+    transform-origin: bottom;
+    box-shadow: -.1rem -.1rem .1rem #000;
+}
+
+img{
+    width: 100%;
+    height: 60%;
+}
+.card-name{
+font-size: 3rem;
+font-weight:900 ;
+text-align: center;
+color: #111;
+letter-spacing: .5rem;
+text-transform: uppercase;
+text-shadow: 0.2rem 0.2rem 0.2rem #000;
+margin-top: 2rem;
+
+}
+.card-btn{
+    width: 15rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: .2rem;
+    color: #888;
+    background-color: #111;
+    border: none;
+    border-radius: 20px;
+    
+   position: relative;
+   left: 17%;
+   margin-top: 2rem;
+   padding: 0.8rem;
+   text-transform: capitalize;
+   box-shadow: -.2rem -.2rem .2rem #000;
+}
+/*end of section-2*/
+/*section 3*/
+.section-3{
+    background-color: #333;
+    padding: 5rem 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+.gallery{
+    display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 10rem;
+
+}
+.gallery-link{
+    position: relative;
+    margin: 4rem 1rem;
+}
+.gallery-link::before{
+    content: "";
+    position: absolute;
+    top: 2vw;
+    left: 80%;
+    width: .2rem;
+    height: 0%;
+    background-color: #fff;
+    transition:height 0.5s;
+    z-index: 10;
+}
+.gallery-link:hover::before{
+    height: 80%;
+}
+.gallery-link::after{
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 2rem;
+    width: 0%;
+    height: 0.2rem;
+    background-color: #fff;
+    transition: width 0.5s;
+
+}
+
+.gallery-link:hover::after{
+    width: 90%;
+}
+
+
+.food-img{
+    width: 26vw;
+    height: 15vw;
+    object-fit: cover;
+    box-shadow: .3rem .3rem .1rem #e92929,.5rem .5rem .1rem #a2e946,.7rem .7rem .1rem #297ce9,.9rem .9rem .1rem #e92999;
+  transition: all 0.5s;
+}
+.gallery-link:hover .food-img{
+  
+box-shadow: 1rem 1rem .1rem #e92929,2rem 2rem 2rem #a2e946,3rem 3rem .1rem #297ce9,4rem 4rem .1rem #e92999;
+filter: blur(.5rem);
+opacity: .5;
+transform: scale(1.1rem);
+}
+
+.food-name{
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #fff;
+    text-shadow: 0.2rem 0.2rem 0.2rem #000;
+    width: 0;
+    overflow: hidden;
+    transition: width 0.3s;
+}
+.gallery-link:hover .food-name{
+    width: 100%;
+    overflow: visible;
+}
+.food-description{
+    position: absolute;
+   bottom: 3vw;
+   left: 2rem;
+   width: 70%;
+   font-size: 1.5rem;
+   font-weight: 500;
+   letter-spacing: 0.1rem;
+   text-transform: uppercase;
+   text-shadow: 0.3rem 0.3rem 0.3rem #494523;
+   color: white;
+   opacity: 0;
+   visibility: hidden;
+   transition: opacity 0.3s;
+}
+.gallery-link:hover .food-description{
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 1s 0.2s;
+}
+/*end of section 3*/
+
+/*section-4*/
+.section-4{
+    width: 100%;
+    height: 30vh;
+    background-color: #222;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3rem 0;
+    color: white;
+    align-items: flex-start;
+    position: relative;
+}
+.section-4-text{
+    text-transform: uppercase;
+}
+.section-4-heading{
+    font-size: 4rem;
+    font-weight: 900;
+    color: #a79a2d;
+}
+
+.section-4-paragraph{
+    font-size: 1.5rem;
+    color: #888;
+}
+.signup-form{
+    display: flex;
+    align-items: center;
+}
+.signup-form-input{
+    width: 35rem;
+    height:5rem ;
+    padding: 1rem;
+    border: 2px solid #a79a2d;
+    font-size: 1.7rem;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    color: #746a15;
+    border-radius: 1rem;
+}
+
+.signup-form-btn{
+   width: 5rem;
+    height:5rem ;
+    border-radius: 5rem;
+}
+.copyright{
+    position: absolute;
+    bottom: 3rem;
+    font-size: 2rem;
+}
+/*end of section-4*/
+
+/*responsive*/
+@media(max-width:1400px){
+    html{
+        font-size: 50%;
+    }
+    .section-2{
+        height: auto;
+        padding: 10rem 0 12rem 0;
+    }
+    .card-container{
+        margin-top: 10rem;
+       
+    }
+    .gallery-link{
+        width: 40rem;
+        height: 25rem;
+        margin: 5rem;
+    }
+
+    .food-img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media(max-width:1000px){
+    .section-heading{
+        font-size: 9rem;
+        margin: 0 5rem;
+    }
+
+    .section-1-icons i{
+  font-size: 25rem;
+    }
+    .card-container{
+        flex-wrap: wrap;
+       
+    }
+    .card{
+        margin: 5rem;
+    }
+
+    .section-4{
+     height: 30rem;
+    }
+}
+
+@media(max-width:900px){
+.navbar-link{
+margin:2rem;
+}
+
+.navbar-link i{
+ font-size: 4rem;
+}
+.navbar-link span{
+    font-size: 2rem;
+   }
+
+.navbar-link i:hover{
+    font-size: 6rem;
+   }}
+
+   @media(max-width:700px){
+    .section-heading{
+        font-size: 6rem;
+        margin: 0 10rem;
+    }
+    .section-1-icons i{
+        font-size: 20rem;
+    }
+    .menu{
+        left: 2rem;
+    }
+    .section-4{
+        height: 30rem;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 4rem;
+    }
+   
+    .signup-form-btn{
+        margin-top: 2.4rem;
+        margin-left: .5rem;
+    }
+   
+   }
+/*end of responsive*/
+
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar target">
+        <a href="#" class="navbar-link">
+            <i class="fa fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="#" class="navbar-link">
+            <i class="fa fa-utensils"></i>
+            <span>Meals</span>
+        </a>
+        <a href="#" class="navbar-link">
+            <i class="fa fa-hamburger"></i>
+            <span>Burger</span>
+        </a>
+        <a href="#" class="navbar-link">
+            <i class="fa fa-pizza-slice"></i>
+            <span>Pizza</span>
+        </a>
+        <a href="#" class="navbar-link">
+            <i class="fa fa-blender-phone"></i>
+            <span>Contact</span>
+        </a>
+        
+    </nav>
+    <div class="menu target"></div>
+    <!--end of navbar-->
+    <div class="container">
+        <!--section-1-->
+        <section class="section-1">
+            <h1 class="section-heading">
+                Variety of Foods
+            </h1>
+
+            <div class="section-1-icons">
+                <i class="fas fa-egg change"></i>
+                <i class="fas fa-stroopwafel"></i>
+                <i class="fas fa-cheese"></i>
+                <i class="fas fa-hotdog"></i>
+                <i class="fas fa-drumstick-bite"></i>
+                <i class="fas fa-apple-alt"></i>
+                <i class="fas fa-ice-cream"></i>
+                <i class="fas fa-fish"></i>
+                <i class="fas fa-cookie"></i>
+                <i class="fas fa-seedling"></i>
+            </div>
+           
+        </section>
+        <!--end of section-1-->
+
+        <!--section-2-->
+        <section class="section-2">
+            <h1 class="section-heading">Popular meals</h1>
+
+            <div class="card-container">
+
+                <div class="card">
+                    <img src="img/frenchfries.jpeg" alt="">
+                    <h3 class="card-name">French Fries</h3>
+                    <button class="card-btn">Order Now</button>
+                </div>
+                <div class="card">
+                    <img src="img/finalcake.jpeg" alt="">
+                    <h3 class="card-name">cupcake</h3>
+                    <button class="card-btn">Order Now</button>
+                </div>
+                <div class="card">
+                    <img src="img/chickentoast.png" alt="">
+                    <h3 class="card-name">Chicken Toast</h3>
+                    <button class="card-btn">Order Now</button>
+                </div>
+
+            </div>
+        </section>
+        <!--end of section-2-->
+        <!--section-3-->
+      <section class="section-3">
+        <h1 class="section-heading">Gallery</h1>
+
+        <div class="gallery">
+            
+                <a href="#" class="gallery-link" title="Order NOw">
+                <img src="img/img1.jpg" class="food-img"
+                alt="">
+                <h3 class="food-name">Kadhai paneer</h3>
+                <p class="food-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio nobis quaerat, rem itaque minima quo?</p>
+              </a>
+  
+               <a href="#" class="gallery-link" title="Order NOw">
+                <img src="img/img2.jpg" class="food-img"
+                alt="">
+                <h3 class="food-name">Special naan</h3>
+                <p class="food-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio nobis quaerat, rem itaque minima quo?</p>
+            </a> 
+           
+          
+                <a href="#" class="gallery-link" title="Order NOw">
+                <img src="img/img3.jpg" class="food-img"
+                alt="">
+                <h3 class="food-name">Beef Toast</h3>
+                <p class="food-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio nobis quaerat, rem itaque minima quo?</p>
+            </a>
+  
+           
+                <a href="#" class="gallery-link" title="Order NOw">
+                <img src="img/img4.jpg" class="food-img"
+                alt="">
+                <h3 class="food-name">Cupcake</h3>
+                <p class="food-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio nobis quaerat, rem itaque minima quo?</p>
+            </a>
+  
+          
+                <a href="#" class="gallery-link" title="Order NOw">
+                <img src="img/img5.jpg" class="food-img"
+                alt="">
+                <h3 class="food-name">Burger</h3>
+                <p class="food-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio nobis quaerat, rem itaque minima quo?</p>
+                
+            </a>
+            
+                <a href="#" class="gallery-link" title="Order NOw">
+                <img src="img/img6.jpg" class="food-img"
+                alt="">
+                <h3 class="food-name">Pizza</h3>
+                <p class="food-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio nobis quaerat, rem itaque minima quo?</p>
+            </a>
+          
+        </div>
+    </section>
+        <!--end of section-3-->
+        <!--section-4-->
+
+        <section class="section-4">
+        <div class="section-4-text">
+            <h2 class="section-4-heading"> Sign me Up </h2>
+                <p class="section-4-paragraph">Be the first to know about the new products </p>
+          
+        </div>
+      <form class="signup-form">
+          <input type="email" class="signup-form-input " placeholder="Enter your email">
+         <button type="submit" class="signup-form-btn">
+             <i class="fas fa-arrow-right"></i>
+         </button>
+      </form>
+      <p class="copyright">CodeAndCreate &copy; All rights reserved</p>
+        </section>
+    <!--end of section-4-->
+    </div>
+    <script >
+        document.querySelector('.menu').addEventListener('click',handleClick
+);
+
+function handleClick(){
+       document.querySelectorAll('.target')[0].classList.toggle('change');
+       document.querySelectorAll('.target')[1].classList.toggle('change');
+    //     document.querySelectorAll('.target').forEach(function(item)
+    //     {
+            
+    //    item.classList.toggle('change');
+    //     })
+       
+}
+
+const icons= document.querySelectorAll('.section-1-icons i')
+
+let i=1;
+
+setInterval(() => {
+    i++
+
+  const icon=  document.querySelector('.section-1-icons .change')
+
+  icon.classList.remove('change')
+
+  if(i>icons.length)
+
+  {
+    icons[0].classList.add('change');
+      i=1;
+  }
+  else {
+      icon.nextElementSibling.classList.add('change')
+  }
+
+}, 3000);
+
+
+    </script>
+</body>
+
+</html>
