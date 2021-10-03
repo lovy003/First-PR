@@ -1,6 +1,6 @@
 #calculator in python
-num1 = int(input("What is the first number?"))
-num2 = int(input("What is the second number?"))
+num1 = float(input("Please Enter The First Number?"))
+num2 = float(input("Please Enter The Second Number?"))
 div = num1/num2
 mul = num1*num2
 add = num1 + num2
