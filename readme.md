@@ -12,7 +12,7 @@ make pull request
  ![Frame 1 (2)](https://user-images.githubusercontent.com/55616388/135486681-adf5d5e7-d03c-4352-8e0c-d33ca1bee931.jpg)
 
 
-Hello ,HacktoberFest has begun again for year 2021d!
+Hello ,HacktoberFest has begun again for year 2021!
 
 ### What is it?
 Hacktoberfest is a month-long global celebration of open source software run by DigitalOcean in partnership with Intel, AppWrite, and DeepSource, with a strong focus on encouraging contributions to open source projects.
