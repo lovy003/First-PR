@@ -1,10 +1,3 @@
-![Frame 1 (2)](https://user-images.githubusercontent.com/55616388/135486681-adf5d5e7-d03c-4352-8e0c-d33ca1bee931.jpg)
-
-
-# HacktoberFest21
-
-Hello ,HacktoberFest has begun again for year 2021d!
-
 ### How to Contribute to this Repo:
 Add your projects to this repository
 ```sh
@@ -14,7 +7,14 @@ add your project/code
 make pull request
 ```
  
-### What is Hacktoberfest?
+ ![Frame 1 (2)](https://user-images.githubusercontent.com/55616388/135486681-adf5d5e7-d03c-4352-8e0c-d33ca1bee931.jpg)
+
+
+# HacktoberFest21
+
+Hello ,HacktoberFest has begun again for year 2021d!
+
+### What is it?
 Hacktoberfest is a month-long global celebration of open source software run by DigitalOcean in partnership with Intel, AppWrite, and DeepSource, with a strong focus on encouraging contributions to open source projects.
 
 ### How do I get started?
