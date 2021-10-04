@@ -1,0 +1,11 @@
+Model Information:
+* title:	Tesla 2018 Model 3
+* source:	https://sketchfab.com/3d-models/tesla-2018-model-3-5ef9b845aaf44203b6d04e2c677e444f
+* author:	Ameer Studio (https://sketchfab.com/uchiha.321abc)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Tesla 2018 Model 3" (https://sketchfab.com/3d-models/tesla-2018-model-3-5ef9b845aaf44203b6d04e2c677e444f) by Ameer Studio (https://sketchfab.com/uchiha.321abc) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
