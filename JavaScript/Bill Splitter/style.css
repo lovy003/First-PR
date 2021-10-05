@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css?family=Barriecito|Lora&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #92a5b9;
+  font-family: "Lora", serif;
+}
+.wrapper {
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  background-color: #b5ebda;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+  font-size: 4rem;
+  font-family: "Barriecito", cursive;
+  margin-bottom: 2rem;
+}
+
+form {
+  margin: 0 auto;
+  border: 2px solid #2e3f51;
+  width: 35%;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+label {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+}
+.fas {
+  font-size: 1rem;
+  margin-right: 0.4rem;
+}
+input {
+  margin: 0.8rem 2rem 2rem 0;
+  display: block;
+  font-size: 1.1rem;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  width: 75%;
+}
+input::placeholder {
+  color: #c1c1c1;
+}
+input:focus {
+  outline: none;
+}
+
+#addTip {
+  border: none;
+  background-color: #fff;
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: #12966c;
+  font-family: "Lora", serif;
+}
+#addTip:hover {
+  color: #142536;
+}
+#tipInput {
+  display: none;
+  transition: display 3s ease-in;
+  -webkit-transition: display 3s ease-in;
+}
+#tipPercent {
+  margin-bottom: 0.5rem;
+}
+#switchTip {
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  border: none;
+}
+.buttonSpace {
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
+}
+.buttonSpace button {
+  margin-top: 0.6rem;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 0.5rem 4rem;
+  font-family: "Lora", serif;
+  font-size: 1.2rem;
+}
+#splitBtn {
+  transition: 0.3s;
+  background-color: #035239;
+  color: #fff;
+}
+#splitBtn:hover {
+  border: 1px solid #18b180;
+  background-color: #fff;
+  letter-spacing: 0.4rem;
+  color: #2e3f51;
+}
+#resetBtn {
+  background-color: #062546;
+  color: white;
+}
+#perPerson {
+  padding-top: 1.5rem;
+  font-family: "Barriecito", cursive;
+  font-size: 4rem;
+  font-weight: 400;
+  text-align: center;
+  color: #035239;
+}
+
+footer {
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/*  =============== . MEDIA QUERIES ============ */
+@media screen and (max-width: 992px) {
+  .insert {
+    width: 80%;
+  }
+  label {
+    display: block;
+  }
+
+  #submit {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .insert {
+    width: 90%;
+  }
+  .buttonSpace button {
+    width: 90%;
+    display: inline-table;
+  }
+}
