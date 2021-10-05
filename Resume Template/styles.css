@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    color:lightseagreen;
+}
+
+.container{
+    position: relative;
+    width: 60rem;
+    left: 10%;
+}
+
+.container1 {
+    display: flex;
+    border: 1px solid aqua;
+    margin:  calc(10vh - 10px);
+    padding: 100px 15px 50px 30px;
+}
+
+.right_container {
+    border-left:1px solid aqua;
+    padding-left: 30px;
+}
+
+.left_container {
+    padding-right: 2px;
+}
+
+ul{
+    padding-left: 15px;
+}
+
+h3,h2{
+    padding: 5px 0;
+}
+
+.right_container{
+    margin-bottom: 10px;
+}
+
+.sub_para {
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+.accounts_intern {
+    padding-bottom: 1px;
+}
