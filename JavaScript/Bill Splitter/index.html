@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">Bill Splitter</div>
+
+      <form class="insert">
+        <label id="totalL"><i class="fas fa-coins"></i> How much?</label>
+        <input type="number" id="total" placeholder="Enter the Total Amount" />
+
+        <label id="totalL"><i class="fas fa-users"></i> How many?</label>
+        <input
+          type="number"
+          id="people"
+          placeholder="Add the number of People"
+        />
+
+        <label id="tipL"
+          ><i class="fas fa-heart"></i> Wanna Add Some tip?<button id="addTip">
+            Add a tip
+          </button></label
+        >
+        <div id="tipInput">
+          <input
+            type="number"
+            id="tipPercent"
+            placeholder="Add % of the Total"
+          />
+        </div>
+        <div class="buttonSpace">
+          <button id="splitBtn">Split!</button>
+          <button id="resetBtn">Reset</button>
+        </div>
+        <div id="perPerson">0</div>
+      </form>
+    </div>
+
+    <footer>By Isha Mehta</footer>
+    <script src="index.js"></script>
+  </body>
+</html>
