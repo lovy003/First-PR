@@ -1,0 +1,176 @@
+/* Global view */
+
+body{
+    font-family: 'Asap', sans-serif;
+    background-color: rgb(184, 173, 173);
+}
+
+.container{
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 140px;
+}
+
+.header-container{
+    background-color: rgb(46, 44, 44);
+    min-height: 100px;
+    position: fixed;
+    width: 100%;
+}
+
+header{
+    max-width: 1024px;
+    /* background-color: blueviolet; */
+    min-height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.highlight{
+    font-weight: bold;
+}
+
+.button:hover{
+    color: yellow;
+    transition-delay: 100ms;
+}
+
+.button{
+    border: 0.1rem solid;
+    text-decoration: none;
+    color: whitesmoke;
+    margin-right: 10px;
+    padding: 6px 10px;
+}
+
+.hide-desktop-only {
+    display: none;
+}
+
+.col{
+    width: 30%;
+    margin-bottom: 40px;
+    background-color: rgb(144, 194, 51);
+}
+
+.col p{
+    color:white;
+    margin: 7px;
+    text-align: center;
+    font-size: 0.875rem;
+    line-height: 1rem;
+}
+
+.col img{
+    width: 100%;
+    height: auto;
+}
+
+.col p::first-line{
+    font-weight: bold;
+}
+
+.footer-container{
+    background-color: rgb(46, 44, 44);
+    min-height: 100px;
+    margin-top: 20px;
+}
+
+footer{
+    max-width: 1024px;
+    /* background-color: blueviolet; */
+    min-height: 100px;
+    margin: 0 auto;
+}
+
+.mob-wrapper{
+    display: none;
+}
+
+/* Tablet View */
+@media (max-width: 768px){
+    
+    .col {
+        width: 45%;
+    }
+    
+    .hide-desktop-only {
+        display: block;
+    }
+    
+    /* header {
+        display: block;
+        text-align: center;
+    } */
+    .header-container {
+        position: relative;
+    }
+    
+    .container {
+        padding-top: 40px;
+    }
+    
+    nav{
+        display: none;
+    }
+
+    /* nav a {
+        display: block;
+       } */
+    
+    .logo {
+        padding: 40px 0; 
+    }
+    
+    .button {
+        margin-left: 0;
+    }
+
+    .mob-wrapper{
+        display: block;
+        padding-right: 30px;
+    }
+
+    .mob-nav{
+        display: none;
+        position: absolute;
+        padding-top: 10px;
+    }
+
+    .navbutton{
+        display: block;
+        text-decoration: none;
+        color: white;
+        margin-left: -70px;
+        background-color: sandybrown;
+        padding: 15px 30px;
+        text-align: center;
+    }
+
+    .highlight{
+        margin-left: 30px;
+    }
+    
+    }
+    
+    
+    /* Mobile View */
+    @media (max-width: 400px){
+        
+        .col {
+            width: 100%;
+        }
+    
+        .hide-mobile {
+            display: none;
+        }
+    
+    }
+    
