@@ -1,0 +1,17 @@
+html{
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  /* display: block; */
+  vertical-align: top;
+  
+}
+
+body {
+  padding: 20px;
+  margin: 0;
+  text-align: center;
+  justify-content: center;
+}
