@@ -1,3 +1,6 @@
+### About this Repository
+This Repository allows you to contribute to various projects & programs irrespective of any particular programming language. You can add your proper working code to this repository. Beginners are welcome to get their first PR towards Hacktoberfest.
+
 ### How to Contribute to this Repo:
 Add your projects to this repository
 ```sh
