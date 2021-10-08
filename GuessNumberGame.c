@@ -4,12 +4,13 @@
 
 int main()
 {
-    int number, guess, numguess ;
+    int number, guess, numguess ,no;
     srand(time(0));            //Number Generator
     number = rand() % 100 + 1; //Generates a random number between 1-100
+    printf("Enter no of Chances in which you can crack this game "); scanf("%d",&no);
 
     printf("Here starts the game\n");
-    for (numguess=1; guess != number; numguess++)
+    for (numguess=1; guess != number && numguess<no+1; numguess++)
     {
         printf("Enter your guess\n");
         scanf("%d", &guess);
@@ -24,8 +25,12 @@ int main()
         }
         else
         {
-            printf("You guessed it right in %d times\n", numguess);
+            printf("Congratulations! You have cracked this Challenge in %d times!!!\n", numguess);
+            break;
         }
+    }
+    if (numguess==no+1 && guess!=number){
+        printf("You Failed in this challenge,Better Luck next time!!!\n");
     }
 
     // do
