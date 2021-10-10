@@ -1,0 +1,38 @@
+body{
+
+    display: flex;
+    justify-content: center;
+    background-image: url("https://i.ytimg.com/vi/sOfdDibgjbk/maxresdefault.jpg");
+}
+table{
+    /* border: none; */
+    /* outline: none; */
+    /* color: black; */
+    text-align: center;
+    border-radius: 12px;
+    /* font-weight: 600; */
+    padding: 15px;
+    margin: 30px 0 20px 0;
+    background: transparent;
+    box-shadow: inset 2px 2px 5px rgb(146, 142, 142), inset -5px -5px 10px rgb(184, 177, 177)
+}
+tr{
+    height: 10vh;
+    width: 10vw;
+}
+input[type="text"]
+{
+    margin-right:10px ;
+    height: 50px;
+    width: 150px;
+    position: relative;
+    left: 2%;
+}
+input[type="button"]
+{
+    background-color: rgb(212, 212, 245);
+    height: 50px;
+    width: 50px;
+    background:transparent ;
+    backdrop-filter: blur(5%);
+}
