@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div data-tilt>
+        <table class="container">
+            <tr>
+                <td colspan="5"><input type="text" id="result" readonly><input type="button" value="C" onclick="clr()">
+                </td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="dis('1')" /></td>
+                <td><input type="button" value="2" onclick="dis('2')" /></td>
+                <td><input type="button" value="3" onclick="dis('3')"></td>
+                <td><input type="button" value="+" onclick="dis('+')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="dis('4')"></td>
+                <td><input type="button" id="no" value="5" onclick="dis('5')"></td>
+                <td><input type="button" id="no" value="6" onclick="dis('6')"></td>
+                <td><input type="button" id="-" value="-" onclick="dis('-')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" id="no" value="7" onclick="dis('7')"></td>
+                <td><input type="button" id="no" value="8" onclick="dis('8')"></td>
+                <td><input type="button" id="no" value="9" onclick="dis('9')"></td>
+                <td><input type="button" id="x" value="*" onclick="dis('*')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="del" onclick="del()"></td>
+                <td><input type="button" value="0" onclick="dis('0')"></td>
+                <td><input type="button" value="=" onclick="solve()"></td>
+                <td><input type="button" value="/" onclick="dis('/')"></td>
+            </tr>
+        </table>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"
+        integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+<script src="script.js"></script>
+
+</html>
