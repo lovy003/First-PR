@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Game Controller</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <img src="image/download (4).png" class="logo" alt="">
+            <nav>
+                <ul id="menu-list"> 
+                    <li><a href="">Game Controllers</a></li>
+                    <li><a href="">VR Accessories</a></li>
+                    <li><a href="">Media Remotes</a></li>
+                    <li><a href="">Others</a></li>
+                </ul>
+            </nav>
+            <img src="image/icons8-menu-64.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <h2>PS4 V2 <br>Dualshock 4</h2>
+                <h3>Wireless Controller for PlayStation 4</h3>
+                <p>(Compatiable/Generic)</p>
+                <h4>$32.50</h4>
+                <button type="button">Buy Now <img src="image/right-arrow.png" alt=""></button>
+            </div>
+            <div class="col-2">
+                <img src="image/pngfind.com-gaming-controller-png-267132.png" class="controller" alt="">
+
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <img src="image/plus.png" alt="">
+                    <p><small>Add to cart</small></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <img src="image/facebook-logo-493.png" alt="">
+            <img src="image/instagram-logo-png-2427.png" alt="">
+            <img src="image/twitter-logo-png-5862.png" alt="">
+        </div>
+    </div>
+
+    <script>
+        var menulist = document.getElementById("menu-list");
+        menulist.style.maxHeight = "0px";
+
+        function togglemenu(){
+
+            if(menulist.style.maxHeight == "0px")
+            {
+                console.log('someone clicked ')
+                menulist.style.maxHeight = "130px";
+            }
+            else{
+                menulist.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+
+</html>
