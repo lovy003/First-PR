@@ -25,3 +25,9 @@ Hacktoberfest is a month-long global celebration of open source software run by 
 2. Click on the 'Start Hacking' Button.
 3. Login using your Github/ Gitlab account. It is crucial that you have a Github or Gitlab account to take part in Hactoberfest.
 4. And you're all set!
+
+### Swags of Hacktoberfest:
+- Many of the candidates get attracted towards hacktoberfest to get swags . So, after 4 successfully merged pull request as for 2021 you will be eligible to get a Hacktoberfest T-shirt and Some stickers on your doorstep.
+ 
+     <li><B><p><img src="https://miro.medium.com/max/1050/1*4JctIO7irt8hFxBmTvUpiQ.jpeg" width="400" height="225" style="width: 400px; height: 225px;" alt="tshirt image"></a></p><p><img src="https://miro.medium.com/max/1050/1*jkffr74bq5RsQ_xqDhgqYQ.jpeg" width="400" height="225" style="width: 400px; height: 225px;" alt="stickers image"></p>
+</b></li>
