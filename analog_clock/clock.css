@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+body{
+    background: #000;
+
+}
+#canvas{
+    padding-left: 547px;
+    margin-top: 30px;
+   
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    color: blueviolet;
+    font-size: 100px;
+    text-align: center;
+    
+}
+
+@media (max-width:1024px){
+    #canvas{
+        padding-left: 75px;
+    }
+}
+@media (max-width:768px){
+    #canvas{
+        padding-left: 0px;
+       
+    }
+    .head{
+        text-align: center;
+        font-size: 60px;
+    }
+    
+}
